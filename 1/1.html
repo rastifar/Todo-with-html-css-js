@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/1.css">
-    <title>To Dp List</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1092668505.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
+      rel="stylesheet"
+    />
+    <title>To Do List</title>
+  </head>
+  <body class="bod">
+    <div class="container">
+      <section class="header-light header">
+        <div class="flex">
+          <div class="todo">TO DO</div>
+          <div class="img-light img"></div>
+        </div>
+        <input class="input" type="text" placeholder="Create a new todo..." />
+      </section>
+      <section class="main">
+        <ul class="list">
+          <!-- <li class="item-space">
+                    <i class="fa fa-check-circle co" job="complete" id="0"></i>
+                    <p class="text lineThrough">Drink Coffee</p>
+                    <i class="fa fa-close de" job="delete" id="0"></i>
+                </li> -->
+        </ul>
+        <div class="flex-display1">
+          <div class="itemLeft">
+            <span class="spanNoOfItem">0</span>&nbspitem left
+          </div>
+          <div class="clearComplete">clear completed</div>
+        </div>
+        <div class="flex-display2">
+          <div class="all">All&nbsp&nbsp&nbsp</div>
+          <div class="active">Active&nbsp&nbsp&nbsp</div>
+          <div class="complete">Completed</div>
+        </div>
+      </section>
+    </div>
+    <script src="./1.js"></script>
+  </body>
 </html>
