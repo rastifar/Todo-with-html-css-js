@@ -2,8 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Dongle", sans-serif;
-  font-size: 1.3rem;
+  /* font-family: "Dongle", sans-serif; */
+  font-family: yekan;
+  font-size: 22px;
+}
+/* @font-face {
+  font-family: "Dongle";
+  src: url("./fonts/Dongle-Regular.eot");
+  src: url("./fonts/Dongle-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: yekan;
+  src: url('./fonts/yekan.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   background-color: rgb(31, 30, 30);
@@ -19,7 +33,9 @@ body {
 }
 .header {
   width: 100%;
-  height: 35vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow: hidden;
 }
 .header-light {
@@ -36,7 +52,7 @@ body {
 }
 .todo {
   color: white;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
 }
 .img {
   width: 35px;
@@ -78,6 +94,7 @@ body {
 .lineThrough {
   color: lightgray;
   text-decoration: line-through;
+
 }
 .fa-check-circle {
   color: rgb(71, 161, 245) !important;
@@ -99,7 +116,7 @@ body {
   display: flex;
   padding: 7px;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(168, 166, 166, 0.24) 0px 3px 8px;
 }
 .flex-display2 {
   margin: 1% 22%;
@@ -107,7 +124,7 @@ body {
   display: flex;
   padding: 5px;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(168, 166, 166, 0.24) 0px 3px 8px;
 }
 /* .list li{
     color: lightgray;
@@ -129,13 +146,53 @@ body {
      
 } */
 
-/* @media screen {
-    .header-light{
-        background-image: url('./pic/bg-mobile-light.jpg');
-    }
-    .header-dark{
-        background-image: url('./pic/bg-mobile-dark.jpg');
-    }
+@media screen and (max-width: 370px) {
+  * {
+    font-size: 16px;
+  }
+  .header-light {
+    background-image: url("./pic/bg-mobile-light.jpg");
+  }
+  .header-dark {
+    background-image: url("./pic/bg-mobile-dark.jpg");
+  }
+  .input {
+    margin: 2% 8%;
+    width: 85%;
+  }
+  .list {
+    margin: 2% 8%;
+    width: 85%;
+  }
+  .flex-display1 {
+    margin: 1% 8%;
+    width: 85%;
+  }
+  .flex-display2 {
+    margin: 1% 8%;
+    width: 85%;
+  }
+}
 
-    
-} */
+@media screen and (max-width: 860px), (min-width: 370) {
+  * {
+    font-size: 19px;
+  }
+
+  .input {
+    margin: 2% 8%;
+    width: 85%;
+  }
+  .list {
+    margin: 2% 8%;
+    width: 85%;
+  }
+  .flex-display1 {
+    margin: 1% 8%;
+    width: 85%;
+  }
+  .flex-display2 {
+    margin: 1% 8%;
+    width: 85%;
+  }
+}
